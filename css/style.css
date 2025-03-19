@@ -1,0 +1,46 @@
+/* RESET */
+:root {
+  --player-height: 90px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* LAYOUT */
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(20 25 34);
+}
+
+#top-content {
+  height: calc(100vh - (var(--player-height)));
+  display: flex;
+}
+
+#player {
+  height: 90px;
+  background-color: rgb(40 40 40);
+}
