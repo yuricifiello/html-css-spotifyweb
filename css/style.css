@@ -68,3 +68,15 @@ ul {
     width: calc(100% - var(--sidebar-width));
   }
 }
+
+/* DISPOSITIVO S */
+@media screen and (min-width: 390px) {
+  .sidebar {
+    width: var(--sidebar-width-big);
+    background-color: black;
+  }
+
+  .main-content {
+    width: calc(100% - var(--sidebar-width-big));
+  }
+}
