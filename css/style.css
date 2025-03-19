@@ -1,6 +1,8 @@
 /* RESET */
 :root {
   --player-height: 90px;
+  --sidebar-width: 80px;
+  --sidebar-width-big: 170px;
 }
 
 * {
@@ -43,4 +45,26 @@ ul {
 #player {
   height: 90px;
   background-color: rgb(40 40 40);
+}
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: black;
+}
+
+.main-content {
+  width: calc(100% - var(--sidebar-width));
+}
+
+/* DISPOSITIVO XS */
+
+@media screen and (max-width: 337px) {
+  .sidebar {
+    width: var(--sidebar-width);
+    background-color: black;
+  }
+
+  .main-content {
+    width: calc(100% - var(--sidebar-width));
+  }
 }
