@@ -1,7 +1,7 @@
 /* RESET */
 :root {
   --player-height: 90px;
-  --sidebar-width: 80px;
+  --sidebar-width: 28px;
   --sidebar-width-big: 170px;
 }
 
@@ -24,8 +24,24 @@ a {
   color: inherit;
 }
 
+li {
+  color: grey;
+}
+
 ul {
   list-style-type: none;
+}
+
+.text {
+  color: grey;
+}
+
+.name {
+  color: white;
+}
+
+h4 {
+  color: white;
 }
 
 /* LAYOUT */
@@ -50,15 +66,43 @@ ul {
 .sidebar {
   width: var(--sidebar-width);
   background-color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .main-content {
   width: calc(100% - var(--sidebar-width));
 }
 
+.symbol {
+  display: flex;
+  align-items: center;
+  width: 20px;
+  margin-bottom: 10px;
+}
+
+.symbol-full {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.symbol-small {
+  display: flex;
+  align-items: center;
+  width: 20px;
+}
+
+.section-symbol {
+  margin-left: 3px;
+}
+
 /* DISPOSITIVO XS */
 
-@media screen and (max-width: 337px) {
+@media screen and (max-width: 389px) {
   .sidebar {
     width: var(--sidebar-width);
     background-color: black;
@@ -66,6 +110,18 @@ ul {
 
   .main-content {
     width: calc(100% - var(--sidebar-width));
+  }
+
+  .symbol-full {
+    display: none;
+  }
+
+  .text {
+    display: none;
+  }
+
+  ul {
+    display: none;
   }
 }
 
@@ -78,5 +134,15 @@ ul {
 
   .main-content {
     width: calc(100% - var(--sidebar-width-big));
+  }
+
+  .symbol-small {
+    display: none;
+  }
+
+  .section-symbol {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
   }
 }
