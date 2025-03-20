@@ -3,8 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Spotify</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -32,8 +38,8 @@
               <div class="text"><span>Libreria</span></div>
             </div>
             <nav>
+              <h4>PLAYLIST</h4>
               <ul class="playlist">
-                <h4>PLAYLIST</h4>
                 <li>Crea playlist</li>
                 <li>Nome Playlist</li>
                 <li>Nome Playlist</li>
@@ -57,7 +63,23 @@
         </div>
         <div class="main-content"></div>
       </div>
-      <div id="player"></div>
+      <div id="player">
+        <div class="cover">
+          <div class="cover-slidebar">
+            <img src="./img/sinister.jpeg" alt="Cover" />
+          </div>
+          <div class="text-cover">
+            <div class="title-cover">
+              <span><b>Sinister</b></span>
+              <div class="subtitle-cover"><span>Nome brano</span></div>
+            </div>
+          </div>
+          <div class="icon-cover">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-regular fa-folder"></i>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

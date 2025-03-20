@@ -123,6 +123,38 @@ h4 {
 #player {
   height: 90px;
   background-color: rgb(40 40 40);
+  display: flex;
+  align-items: center;
+}
+
+.cover {
+  width: 25%;
+  align-items: center;
+}
+
+.cover-slidebar {
+  width: 20px;
+  margin-left: 20px;
+}
+
+.text-cover {
+  margin-left: 5px;
+  display: flex;
+}
+
+.title-cover {
+  font-size: 10px;
+  color: white;
+}
+
+.subtitle-cover {
+  color: grey;
+}
+
+.icon-cover {
+  color: grey;
+  display: flex;
+  flex-direction: column;
 }
 
 /* DISPOSITIVO XS */
@@ -148,6 +180,28 @@ h4 {
   ul {
     display: none;
   }
+
+  h4 {
+    display: none;
+  }
+
+  .cover-slidebar {
+    width: 20px;
+    margin-left: 3px;
+  }
+
+  .cover {
+    display: flex;
+  }
+
+  .text-cover {
+    flex-direction: column;
+    width: 10%;
+  }
+  .icon-cover {
+    gap: 5px;
+    margin-left: 50px;
+  }
 }
 
 /* DISPOSITIVO S */
@@ -167,5 +221,9 @@ h4 {
 
   .symbol {
     padding: 5px;
+  }
+
+  .cover {
+    display: flex;
   }
 }
