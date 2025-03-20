@@ -34,6 +34,7 @@ ul {
 
 .text {
   color: grey;
+  margin-left: 5px;
 }
 
 .name {
@@ -46,6 +47,8 @@ h4 {
 
 /* LAYOUT */
 
+/* WRAPPER */
+
 .wrapper {
   width: 100vw;
   height: 100vh;
@@ -53,33 +56,34 @@ h4 {
   background-color: rgb(20 25 34);
 }
 
+/* CONTENT */
+
 #top-content {
   height: calc(100vh - (var(--player-height)));
   display: flex;
-}
-
-#player {
-  height: 90px;
-  background-color: rgb(40 40 40);
-}
-
-.sidebar {
-  width: var(--sidebar-width);
-  background-color: black;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
 }
 
 .main-content {
   width: calc(100% - var(--sidebar-width));
 }
 
+/* SIDEBAR */
+
+.sidebar {
+  width: var(--sidebar-width);
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+
 .symbol {
   display: flex;
   align-items: center;
+  margin-top: 5px;
+}
+
+.icon {
   width: 20px;
-  margin-bottom: 10px;
 }
 
 .symbol-full {
@@ -100,9 +104,30 @@ h4 {
   margin-left: 3px;
 }
 
+.structure-profile {
+  margin-top: auto;
+}
+
+.sidebar .text {
+  font-size: 13px;
+}
+
+/* PLAYLIST */
+
+.playlist {
+  padding: 7px;
+}
+
+/* PLAYER */
+
+#player {
+  height: 90px;
+  background-color: rgb(40 40 40);
+}
+
 /* DISPOSITIVO XS */
 
-@media screen and (max-width: 389px) {
+@media screen and (max-width: 576px) {
   .sidebar {
     width: var(--sidebar-width);
     background-color: black;
@@ -126,7 +151,7 @@ h4 {
 }
 
 /* DISPOSITIVO S */
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 577px) {
   .sidebar {
     width: var(--sidebar-width-big);
     background-color: black;
@@ -140,9 +165,7 @@ h4 {
     display: none;
   }
 
-  .section-symbol {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
+  .symbol {
+    padding: 5px;
   }
 }
