@@ -80,6 +80,7 @@ h4 {
   display: flex;
   align-items: center;
   margin-top: 5px;
+  color: white;
 }
 
 .icon {
@@ -124,22 +125,27 @@ h4 {
   height: 90px;
   background-color: rgb(40 40 40);
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  padding: 5px;
+  flex-grow: 1;
+  gap: 3px;
 }
 
+/* PLAYER-COVER */
 .cover {
-  width: 25%;
+  display: flex;
   align-items: center;
 }
 
-.cover-slidebar {
-  width: 20px;
-  margin-left: 20px;
+.cover-sidebar {
+  width: 40px;
+  padding: 2px;
 }
 
 .text-cover {
-  margin-left: 5px;
   display: flex;
+  padding: 3px;
 }
 
 .title-cover {
@@ -152,9 +158,80 @@ h4 {
 }
 
 .icon-cover {
-  color: grey;
   display: flex;
+  flex-wrap: wrap;
+  color: grey;
+  padding: 3px;
+  gap: 5px;
   flex-direction: column;
+}
+
+/* SETTINGS-REPRODUCTION */
+
+.settings {
+  flex-direction: column;
+  display: flex;
+  flex-shrink: 1;
+  color: white;
+  gap: 5px;
+}
+
+.settings-icon {
+  color: white;
+  display: flex;
+  font-size: 30px;
+  gap: 22px;
+}
+
+.progress-bar-container {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.text-time {
+  font-size: 12px;
+}
+
+.text-time-total {
+  font-size: 12px;
+}
+
+.progress-bar {
+  display: flex;
+  border: 2px solid grey;
+  border-radius: 5px;
+  height: 10px;
+  width: 160px;
+}
+
+.progress-bar-now {
+  background: grey;
+  width: 25%;
+}
+
+/* AUDIO */
+
+.audio {
+  display: flex;
+  align-items: center;
+}
+
+.icon-audio .progress-bar {
+  width: 80px;
+  align-items: center;
+}
+
+.icon-audio {
+  color: white;
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.audio .progress-bar-now {
+  background: grey;
+  width: 10%;
 }
 
 /* DISPOSITIVO XS */
@@ -184,24 +261,6 @@ h4 {
   h4 {
     display: none;
   }
-
-  .cover-slidebar {
-    width: 20px;
-    margin-left: 3px;
-  }
-
-  .cover {
-    display: flex;
-  }
-
-  .text-cover {
-    flex-direction: column;
-    width: 10%;
-  }
-  .icon-cover {
-    gap: 5px;
-    margin-left: 50px;
-  }
 }
 
 /* DISPOSITIVO S */
@@ -219,11 +278,17 @@ h4 {
     display: none;
   }
 
-  .symbol {
-    padding: 5px;
-  }
-
-  .cover {
+  .icon-cover {
     display: flex;
+    flex-direction: row;
   }
+}
+
+/* DISPOSITIVO MD */
+
+@media screen and (min-width: 768px) {
+}
+
+.setting > .progress-bar {
+  overflow: auto;
 }
