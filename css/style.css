@@ -26,6 +26,7 @@ a {
 
 li {
   color: grey;
+  padding: 5px;
 }
 
 ul {
@@ -234,6 +235,21 @@ h4 {
   width: 10%;
 }
 
+/* CATEGORY */
+
+.category {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.category-list {
+  display: flex;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 /* DISPOSITIVO XS */
 
 @media screen and (max-width: 576px) {
@@ -285,6 +301,8 @@ h4 {
   color: white;
   font-size: 10px;
 }
+
+/* CATEGORY */
 
 /* DISPOSITIVO S */
 @media screen and (min-width: 577px) {
